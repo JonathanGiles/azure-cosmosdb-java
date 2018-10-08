@@ -38,7 +38,6 @@ SOFTWARE.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.6.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -47,7 +46,6 @@ SOFTWARE.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
-        <version>2.8</version>
         <configuration>
           <classpathContainers>
             <classpathContainer>
@@ -63,17 +61,14 @@ SOFTWARE.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.22.0</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>3.0.4</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>2.1</version>
       </plugin>
     </plugins>
   </reporting>
@@ -81,37 +76,30 @@ SOFTWARE.
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>${jackson-databind.version}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.uuid</groupId>
       <artifactId>java-uuid-generator</artifactId>
-      <version>${java-uuid-generator.version}</version>
     </dependency>
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>${commons-io.version}</version>
     </dependency>
     <dependency>
       <groupId>com.github.davidmoten</groupId>
       <artifactId>rxjava-extras</artifactId>
-      <version>${rxjava-extras.version}</version>
     </dependency>
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxjava</artifactId>
-      <version>${rxjava.version}</version>
     </dependency>
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxjava-string</artifactId>
-      <version>${rxjava-string.version}</version>
     </dependency>
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxnetty</artifactId>
-      <version>${rxnetty.version}</version>
       <exclusions>
         <exclusion>
           <groupId>io.netty</groupId>
@@ -122,67 +110,55 @@ SOFTWARE.
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-http</artifactId>
-      <version>${netty.version}</version>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-handler</artifactId>
-      <version>${netty.version}</version>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport</artifactId>
-      <version>${netty.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>${slf4j.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>${commons-lang3.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-collections4</artifactId>
-      <version>4.2</version>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>${testng.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>${assertj.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
-      <version>${mockito.version}</version>
+      <artifactId>mockito-core</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>${slf4j.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>${log4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>${guava.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
